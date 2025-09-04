@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Topbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+ 
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-8 d-flex flex-wrap justify-content-center justify-content-md-start">
+        <a href="tel:+919844235100" style="font-size: 18px;"><i class="fa fa-phone"></i> +91 98442 35100</a>
+        <a href="tel:+918870693100" style="font-size: 18px;"><i class="fa fa-phone"></i> +91 88706 93100</a>
+        <a href="mailto:shpt.hsr@gmail.com" style="font-size: 18px;"><i class="fa fa-envelope"></i> shpt.hsr@gmail.com</a>
+      </div>
+      <!-- Right Side -->
+      <div class="col-md-4 d-flex justify-content-center justify-content-md-end social-icons">
+        <a href="#"><i style="margin-left: 4px;" class="fab fa-facebook-f"></i></a>
+        <a href="#"><i style="margin-left: 4px;" class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i style="margin-left: 4px;" class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-custom ">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-lg-none" href="#">
+      <img src="images/mainlogo.png" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link left-gap" href="#">OUR PATNERS</a></li>
+
+        <!-- Center Logo -->
+        <li class="nav-item px-3">
+          <a class="navbar-brand mx-3" href="#">
+            <img src="images/mainlogo.png" alt="Logo" class="navbar-logo">
+          </a>
+        </li>
+
+        <!-- Right Menu -->
+        <li class="nav-item"><a class="nav-link right-gap" href="#">OUR CUSTOMERS</a></li>
+         <li class="nav-item"><a class="nav-link right-gap" href="#">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><img src="images/mainlogo.png" style="align-items: center;" width="100px" alt=""></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">OUR PARTNERS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">OUR CUSTOMERS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="banners">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side Content -->
+      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <h1 style="font-size: 45px;">All Types of Electrical &<br>Industrial Supplies</h1>
+        <p style="font-size: 25px;">One-stop solution for all your electrical <br> needs.</p>
+        <a href="#" class="btn-custom">Explore Our Products</a>
+      </div>
+      <!-- Right Side Images -->
+      <div class="col-lg-6 product-images">
+        <img src="images/banone.png" class="banone" alt="Product 1">
+        <img src="images/bantwo.png" class="bantwo" alt="Product 2">
+        <img src="images/banthree.png" class="banthree" alt="Product 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side -->
+     <div class="col-md-6 position-relative">
+      <img src="images/abtn.png" alt="Service" class="img-fluid rounded-3 shadow">
+
+      <!-- Service Badge -->
+      <div class="service-badge">
+        <span>12+</span> Years of Service
+      </div>
+    </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6 about-content">
+        <div class="about-title">| Who We Are</div>
+        <h2>Shaping the Future of Power with Global Expertise</h2>
+        <p><strong>Shree Hamit Power Technologies</strong> (founded in 2012) is a trusted distributor of premium electrical and industrial products. We proudly partner with global brands like <strong>ABB, C&S Electric, BCH Electric, Elmex, Minilec, Selec, Eaton, Rishabh, Socomec, Hansa Green, L&T (Lauritz Knudsen), Salzer, GIC, Esbee</strong>, and more—delivering certified solutions (ISO, TUV, UL, CE) for <strong>wires, cables, starters, switchgears, control gears, distribution components, and circuit breakers.</strong></p>
+        <p>With over a decade of excellence, we ensure timely delivery, quality assurance, and customer-first service—making us the preferred partner for industries and projects across the region.</p>
+        <a href="about.html" class="btn-customs">Know More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="partners-section container">
+    <div class="row">
+      <div class="col-12">
+        <h5 style="font-size: 25px;">| Our Partners</h5>
+      </div>
+    </div>
+    <div class="row partners-logos text-center">
+      <div class="col-6 col-md-3">
+        <img src="images/logoone.png" alt="Lauritz Knudsen" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logotwo.png" alt="Indo Asian" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logofour.png" alt="Minilec" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logothree.png" alt="Elmex" class="img-fluid">
+      </div>
+
+      <div class="col-6 col-md-3">
+        <img src="images/logofive.png" alt="Selec" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logosix.png" alt="3D" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logoseven.png" alt="CRI Pumps" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logoeight.png" alt="GIC" class="img-fluid">
+      </div>
+
+      <div class="col-6 col-md-3">
+        <img src="images/logonine.png" alt="Esbee" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logoten.png" alt="Salzer" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/logoeleven.png" alt="Wago" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/partners12.png" alt="C&S Electric" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services-section container">
+    <div class="row">
+      <div class="col-12">
+        <h5 style="font-size: 25px;">Our Services</h5>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="service-card w-100">
+          <img src="images/serveone.jpg" alt="Electrical & Power Distribution">
+          <h6>Electrical & Power Distribution</h6>
+          <p>Reliable solutions for industries & infrastructure – Circuit Breakers, Transformers, UPS, and more.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="service-card w-100">
+          <img src="images/servetwo.jpg" alt="Cables & Wiring Solutions">
+          <h6>Cables & Wiring <br> Solutions</h6>
+          <p>From HT & LT power cables to flexible industrial wiring – safe, efficient, and durable.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="service-card w-100">
+          <img src="images/servethree.jpg" alt="Electrical Panel Board Manufacturing">
+          <h6>Electrical Panel Board Manufacturing</h6>
+          <p>Custom-built panels and boards – reliable, safe, and efficient power management.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="service-card w-100">
+          <img src="images/servefour.jpg" alt="Panels & Turnkey Supplies">
+          <h6>Panels & Turnkey <br> Supplies</h6>
+          <p>Custom-built panels & OEM supplies for large-scale projects and industries.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <button class="services-btn">View More Services</button>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="why-choose-section">
+    <div class="container why-choose-content">
+      <div class="row align-items-center">
+        
+        <!-- Left content -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h5>| Why Choose us</h5>
+          <h2>Empowering Industries with Trusted Solutions</h2>
+          <p>At Hamit Technologies, we combine world-class brands with unmatched service excellence. Our solutions power industries with reliability, safety, and innovation.</p>
+          <button class="quote-btn">Get a Quote</button>
+        </div>
+
+        <!-- Right feature cards -->
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="feature-card">
+                
+                <h6><i  class="fas fa-handshake icon"></i> Global Brand Partnerships</h6>
+                <p>Authorized distributor for ABB, L&T, C&S Electric, Eaton, Selec, Socomec, and more—delivering quality and certified electrical products.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card">
+                
+                <h6><i class="fas fa-boxes-stacked icon"></i>Wide Product Range</h6>
+                <p>From switchgears, control gears, and distribution components to cables, starters, and circuit breakers—everything under one roof.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card">
+                
+                <h6><i class="fas fa-certificate icon"></i>Assured Quality & <span style="padding-left: 50px;">Certification</span> </h6>
+                <p>Supplying ISO, CE, UL, and TUV certified products that ensure safety, performance, and reliability in every project.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card">
+                <h6><i class="fas fa-truck-fast icon"></i>Timely Delivery & Service</h6>
+                <p>Strong supply chain and customer-first service, ensuring you get the right product at the right time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<section class="stats-section">
+  <div class="container-fluid">
+    <div class="row g-0 align-items-center text-center text-lg-start">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-3 stats-img">
+        <img src="images/counterimage.jpg" alt="Counter Image">
+      </div>
+
+      <!-- Right Side Stats -->
+      <div class="col-lg-9">
+        <div class="row text-center">
+          <div class="col-12 col-md-4">
+            <div class="stat-box">
+              <i class="fas fa-medal"></i>
+              <div class="stat-text">
+                <h3>12+</h3>
+                <p>Years of Service</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="stat-box">
+              <i class="fas fa-screwdriver-wrench"></i>
+              <div class="stat-text">
+                <h3>500+</h3>
+                <p>Projects Delivered</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="stat-box">
+              <i class="fas fa-users"></i>
+              <div class="stat-text">
+                <h3>300+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonial-section">
+  <div class="container">
+    <div class="row align-items-stretch g-4">
+      
+      <!-- Left Side -->
+      <div class="col-lg-5 d-flex flex-column">
+        <span class=" fw-bold" style="font-size: 25px;color: #EE449E;">| Success Story</span>
+        <h2 class="fw-bold mt-2" style="font-size: 40px;">The trusted team behind<br>your power solutions</h2>
+        <img src="images/reviewimage.jpg" 
+             alt="Power Solutions" class="testimonial-img mt-4 img-fluid">
+      </div>
+
+      <!-- Right Side (Carousel) -->
+      <div class="col-lg-7 d-flex" style="margin-top: 11rem;">
+        <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+          
+          <div class="carousel-inner">
+
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-card position-relative">
+                <span class="quote-mark"><i class="fas fa-quote-right"></i></span>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                  <div class="ms-3">
+                    <h5 style="font-size: 25px;">Anand Prakash</h5>
+                    <small style="font-size: 20px;">Alpha Power Systems</small><br>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p style="font-size: 20px;">
+                  We have been associated with Hamit Technologies for several years, 
+                  and their expertise truly stands out. Their support and service 
+                  have helped us complete projects without delays.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-card position-relative">
+                <span class="quote-mark"><i class="fas fa-quote-right"></i></span>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+                  <div class="ms-3">
+                    <h5 style="font-size: 25px;">Neha Sharma</h5>
+                    <small style="font-size: 20px;">Bright Energy Ltd</small><br>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p style="font-size: 20px;">
+                  We have been associated with Hamit Technologies for several years, and their expertise truly stands out. Their support and service have helped us complete projects without delays
+                </p>
+              </div>
+            </div>
+            <div class="carousel-indicators mt-3">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          </div>
+
+          </div>
+
+          <!-- Dots -->
+          
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container my-4">
+  <section class="cta-section d-flex align-items-center justify-content-between flex-wrap">
+    <!-- Left Text -->
+    <div class="cta-text">
+      <h2>Have a project in mind?<br>Let’s power it together</h2>
+    </div>
+    <!-- Right Button -->
+    <div class="cta-action">
+      <a href="#contact" class="btn cta-btn">Get In Touch</a>
+    </div>
+  </section>
+</div>
+
+<footer class="footer text-light  pb-3" style="background-color: #000;">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Logo & About -->
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <img src="images/mainlogo.png" alt="Logo" class="img-fluid rounded p-2 bg-white" style="max-width:170px;">
+        </div>
+        <p class="small" style="font-size: 18px;">
+          Welcome to Shree Hamit Power Technologies, Hosur.
+          We are a trusted distributor of premium electrical and industrial products, proudly partnering with top global brands to deliver certified and reliable solutions.
+        </p>
+      </div>
+
+      <!-- Address -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold mb-3" style="font-size: 20px;">ADDRESS</h6>
+        <p class="mb-2" style="font-size: 18px;"><i class="bi bi-geo-alt-fill text-pink" ></i> 
+          #318/6, Mookandapalli,<br>ESI Hospital Ring Road,<br>Sipcot I, Hosur – 635 126,<br>Tamil Nadu, India.
+        </p>
+        <p class="mb-2" style="font-size: 18px;"><i class="bi bi-envelope-fill text-pink"></i> 
+          <a href="mailto:shpt.hsr@gmail.com" class="text-light text-decoration-none">shpt.hsr@gmail.com</a>
+        </p>
+        <p style="font-size: 18px;"><i class="bi bi-phone-fill text-pink"></i> +91 98442 35100, <br>+91 88706 93100</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold mb-3" style="font-size: 20px;">QUICK LINKS</h6>
+        <ul class="list-unstyled">
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">Home</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">About Us</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">Services</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">Our Partners</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">Our Customers</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block mb-1">Blog</a></li>
+          <li style="font-size: 18px;"><a href="#" class="text-light text-decoration-none d-block">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Brands -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold mb-3" style="font-size: 20px;">BRANDS WE OFFER</h6>
+        <ul class="list-unstyled">
+          <li class="mb-1"style="font-size: 18px;">L&amp;T</li>
+          <li class="mb-1"style="font-size: 18px;">Indo Asian</li>
+          <li class="mb-1"style="font-size: 18px;">Minilec India</li>
+          <li class="mb-1"style="font-size: 18px;">Elmex Controls</li>
+          <li class="mb-1"style="font-size: 18px;">Selec Controls</li>
+          <li class="mb-1" style="font-size: 18px;">3D Lugs</li>
+          <li class="mb-1" style="font-size: 18px;">Wago</li>
+          <li class="mb-1" style="font-size: 18px;">C.R.I. Pumps</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <!-- Bottom Row -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0 small" style="font-size: 20px;">Copyright © 2025 <b>Shree Hamit Technologies.</b> All Rights Reserved</p>
+      <div>
+        <a href="#" class="text-light fs-5 me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light fs-5 me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
