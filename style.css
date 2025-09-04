@@ -47,7 +47,7 @@
   color: #000;
   text-transform: uppercase;
   margin: 0 12px;
-  font-size: 18px;
+  font-size: 17px;
   margin-left: 40px;
   position: relative; /* Needed for ::before */
   transition: color 0.3s ease;
@@ -169,7 +169,7 @@
       margin-right: 15px;
     }
     .topbar a i {
-      color: #e91e63; /* pink icons for phone/mail */
+      color: white; /* pink icons for phone/mail */
       margin-right: 6px;
     }
     .topbar .social-icons a {
@@ -330,7 +330,7 @@
 
     .about-content p {
       color: #333;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 1.6;
     }
 
