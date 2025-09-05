@@ -33,10 +33,9 @@
   </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-custom ">
+<nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
-
-    <!-- Logo -->
+    <!-- Logo (Mobile Only) -->
     <a class="navbar-brand d-lg-none" href="#">
       <img src="images/mainlogo.png" alt="Logo" class="navbar-logo">
     </a>
@@ -49,11 +48,24 @@
     <!-- Desktop Menu -->
     <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
       <ul class="navbar-nav w-100 justify-content-center">
-
         <!-- Left Menu -->
         <li class="nav-item"><a class="nav-link " href="index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-        <li class="nav-item"><a class="nav-link left-gap" href="#">OUR PATNERS</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            OUR PARTNERS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="indoasian.html">INDOASIAN</a></li>
+            <li><a class="dropdown-item" href="#">Partner 2</a></li>
+            <li><a class="dropdown-item" href="#">Partner 3</a></li>
+            <li><a class="dropdown-item" href="#">Partner 4</a></li>
+            <li><a class="dropdown-item" href="#">Partner 5</a></li>
+            <li><a class="dropdown-item" href="#">Partner 6</a></li>
+          </ul>
+        </li>
 
         <!-- Center Logo -->
         <li class="nav-item px-3">
@@ -64,13 +76,15 @@
 
         <!-- Right Menu -->
         <li class="nav-item"><a class="nav-link right-gap" href="#">OUR CUSTOMERS</a></li>
-         <li class="nav-item"><a class="nav-link right-gap" href="#">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link right-gap" href="#">SERVICES</a></li>
         <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-        <li class="nav-item"><a class="nav-link active  " href="contact.html">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Mobile Offcanvas Menu -->
 <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title"><img src="images/mainlogo.png" style="align-items: center;" width="100px" alt=""></h5>
@@ -78,13 +92,28 @@
   </div>
   <div class="offcanvas-body">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
       <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">OUR PARTNERS</a></li>
+
+      <!-- Dropdown inside Offcanvas -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="partnersDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          OUR PARTNERS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="partnersDropdownMobile">
+          <li><a class="dropdown-item" href="indoasian.html">INDOASIAN</a></li>
+          <li><a class="dropdown-item" href="#">Partner 2</a></li>
+          <li><a class="dropdown-item" href="#">Partner 3</a></li>
+          <li><a class="dropdown-item" href="#">Partner 4</a></li>
+          <li><a class="dropdown-item" href="#">Partner 5</a></li>
+          <li><a class="dropdown-item" href="#">Partner 6</a></li>
+        </ul>
+      </li>
+
       <li class="nav-item"><a class="nav-link" href="#">OUR CUSTOMERS</a></li>
       <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+      <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
     </ul>
   </div>
 </div>
