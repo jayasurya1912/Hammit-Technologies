@@ -576,7 +576,7 @@
 
     /* Background faded text */
     .services-section::before {
-  content: "SERVICES";
+  content: "PRODUCTS";
   position: absolute;
   top: 0%;
   left: 50%;
@@ -1400,12 +1400,12 @@
     }
     .icon-circle i {
       font-size: 34px;
-      color: #e91e63;
+      color: #EE449E;
     }
 
     /* Highlighted Title */
     .text-highlight {
-      color: #e91e63;
+      color: #EE449E;
       font-weight: 700;
     }
 
@@ -1726,13 +1726,13 @@ html, body {
 @media (max-width: 412px) {
   .sections-title::before {
     font-size: 15vw;
-    top: 6%; /* shrink further on mobiles */
+    top: 27%; /* shrink further on mobiles */
   }
 }
 @media (max-width: 360px) {
   .sections-title::before {
-    font-size: 15vw;
-    top: 5%; /* shrink further on mobiles */
+    font-size: 13vw;
+    top: 35%; /* shrink further on mobiles */
   }
 }
 
@@ -1770,14 +1770,14 @@ html, body {
 }
 @media (max-width: 412px) {
   .choose-section::before {
-    font-size: 15vw;
-    top: 6%; /* shrink further on mobiles */
+    font-size: 12vw;
+    top: 2%; /* shrink further on mobiles */
   }
 }
 @media (max-width: 360px) {
   .choose-section::before {
-    font-size: 15vw;
-    top: 5%; /* shrink further on mobiles */
+    font-size: 12vw;
+    top: 2%; /* shrink further on mobiles */
   }
 }
 .sectionse-title {
