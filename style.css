@@ -1839,7 +1839,7 @@ html, body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 120px;   /* responsive instead of fixed px */
+  font-size: 90px;   /* responsive instead of fixed px */
   font-weight: 700;
   color: rgba(0, 0, 0, 0.05);
   white-space: nowrap;
@@ -1858,14 +1858,14 @@ html, body {
 }
 @media (max-width: 412px) {
   .sectionses-title::before {
-    font-size: 15vw;
-    top: 6%; /* shrink further on mobiles */
+    font-size: 12vw;
+    top: 18%; /* shrink further on mobiles */
   }
 }
 @media (max-width: 360px) {
   .sectionses-title::before {
-    font-size: 12vw;
-    top: 10%; /* shrink further on mobiles */
+    font-size: 10px;
+    top: 40%; /* shrink further on mobiles */
   }
 }
 .dropdown-item
