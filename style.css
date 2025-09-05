@@ -1858,7 +1858,7 @@ html, body {
 }
 @media (max-width: 412px) {
   .sectionses-title::before {
-    font-size: 12vw;
+    font-size: 10vw;
     top: 18%; /* shrink further on mobiles */
   }
 }
