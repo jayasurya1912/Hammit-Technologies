@@ -1878,7 +1878,138 @@ html, body {
   color: #EE449E;
   background-color: #1A1F25;
 }
+ .mini-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.mini-section::before {
+  content: "MINILEC";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .mini-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .mini-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .mini-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
 
 
+ .selc-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.selc-section::before {
+  content: "SELC";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .selc-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .selc-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .selc-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+
+.lapp-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.lapp-section::before {
+  content: "LAPP";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .lapp-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .lapp-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .lapp-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+  
      
 
