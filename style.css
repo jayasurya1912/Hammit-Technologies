@@ -1517,60 +1517,62 @@
 
     }
 
-    .product-card {
-      position: relative;
-      border: 2px solid #f6cce1;
-      border-radius: 12px;
-      overflow: hidden;
-      text-align: center;
-      padding: 20px;
-      transition: all 0.4s ease;
-      height: 280px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+   .product-card {
+  position: relative;
+  border: 2px solid #f6cce1;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.4s ease;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .product-card img {
-      max-height: 200px;
-      transition: all 0.4s ease;
-      z-index: 1;
-    }
+.product-card img {
+  max-height: 200px;
+  transition: all 0.4s ease;
+  z-index: 0;   /* image stays behind */
+  position: relative;
+}
 
-    .product-overlay {
-      position: absolute;
-      inset: 0;
-      background: #EE449E;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      opacity: 0;
-      transition: all 0.4s ease;
-      text-align: center;
-    }
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(238, 68, 158, 0.80); /* overlay color */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;   /* overlay stays on top */
+}
 
-    .product-overlay h4 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
 
-    .product-overlay p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
+.product-overlay h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
-    .product-card:hover img {
-      opacity: 0;
-      transform: scale(0.9);
-    }
+.product-overlay p {
+  font-size: 14px;
+  line-height: 1.5;
+}
 
-    .product-card:hover .product-overlay {
-      opacity: 1;
-    }
+.product-card:hover img {
+  transform: scale(0.9);
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;  /* overlay fades in */
+}
 
     .choose-section {
       position: relative;
