@@ -2011,5 +2011,180 @@ html, body {
   }
 }
   
-     
+.elmex-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.elmex-section::before {
+  content: "ELMEX";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .elmex-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .elmex-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .elmex-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+
+.three-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.three-section::before {
+  content: "3D";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .three-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .three-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .three-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+
+.lau-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.lau-section::before {
+  content: "L & K";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .lau-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .lau-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .lau-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+
+.sal-section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.sal-section::before {
+  content: "SALZER";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   /* responsive instead of fixed px */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .sal-section::before {
+    font-size: 15vw; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 412px) {
+  .sal-section::before {
+    font-size: 15vw;
+    top: 4%; /* shrink further on mobiles */
+  }
+}
+@media (max-width: 360px) {
+  .sal-section::before {
+    font-size: 15vw;
+    top: 5%; /* shrink further on mobiles */
+  }
+}
+ 
 
