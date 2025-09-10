@@ -295,7 +295,6 @@
       padding: 18px 25px;
       transition: 0.3s;
       text-decoration: none;
-     
     }
     .banners .btn-custom:hover {
       background: #c2185b;
@@ -315,52 +314,48 @@
       padding: 8px;
       transition: transform 0.3s ease;
     }
-
-    /* Keep different sizes but responsive */
-    .banone {
-      width: 190px;
-      max-width: 40%;
-    }
-    .bantwo {
-      width: 140px;
-      max-width: 35%;
-      margin-bottom: 50px;
-      
-    }
-    .banthree {
-      width: 150px;
-      max-width: 38%;
-    }
-
     .product-images img:hover {
       transform: scale(1.05);
     }
 
+    /* Keep different sizes but responsive */
+    .banone { width: 190px; max-width: 40%; }
+    .bantwo { width: 140px; max-width: 35%; margin-bottom: 50px; }
+    .banthree { width: 150px; max-width: 38%; }
+
     /* Responsive adjustments */
     @media (max-width: 992px) {
-      .banners h1 {
-        font-size: 2rem;
-      }
-      .product-images {
-        justify-content: center;
-      }
+      .banners h1 { font-size: 2rem; }
+      .product-images { justify-content: center; }
       .banone, .bantwo, .banthree {
-        width: 100px;
-        max-width: 30%;
-        margin-top: 15px;
+        width: 100px; max-width: 30%; margin-top: 15px;
+      }
+    }
+    @media (max-width: 576px) {
+      .banners { text-align: center; }
+      .banone, .bantwo, .banthree {
+        width: 80px; max-width: 25%; margin-top: 10px;
       }
     }
 
-    @media (max-width: 576px) {
-      .banners {
-        text-align: center;
-      }
-      .banone, .bantwo, .banthree {
-        width: 80px;
-        max-width: 25%;
-        margin-top: 10px;
-      }
-    }
+    /* Force White Circle Indicators */
+.carousel-indicators [data-bs-target] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff !important;  /* force white */
+  opacity: 0.5 !important;               /* faded when inactive */
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1 !important;                 /* fully visible */
+  background-color: white !important;  /* solid white active */
+}
+
+
+
     .about-section {
   position: relative;
   padding: 80px 20px;
@@ -2515,4 +2510,252 @@ html, body {
       transform: scale(1.1);
     }
 
+     .products-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 300px;
+      height: 320px; 
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: auto;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .product-img {
+      flex: 1;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-footer {
+      border-top: 5px solid #EE449E;
+      padding: 15px;
+      text-align: center;
+      background: #fff;
+    }
+    .product-footer h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #EE449E;
+    }
+ .pro-banner {
+      position: relative;
+      background: url('images/productban.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .pro-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .pro-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); 
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .pro-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+
+      .gt-section {
+      padding: 60px 0;
+      background: url('images/backin.jpg') no-repeat center center/cover; /* ✅ Section-only background */
+      color: #fff;
+    }
+    .gt-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .gt-form-box {
+      background: transparent;
+      padding: 20px;
+    }
+    .gt-form-box h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+    .gt-input {
+      padding: 12px 15px;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      border-radius: 0px;
+    }
+    .gt-input:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.3);
+    }
+    .gt-btn-submit {
+      background: #EE449E;
+      border: none;
+      padding: 12px 30px;
+      font-weight: 600;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+    .gt-btn-submit:hover {
+      background: #EE449E;
+    }
+    .client-title h2 {
+      font-size: 25px;
+      font-weight: 700;
+      color: #EE449E;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 15px;
+
+    }
+
+    .client-title {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+
+.client-title::before {
+  content: "CLIENTS";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;   
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Responsive fixes */
+@media (max-width: 768px) {
+  .client-title::before {
+    font-size: 15vw; 
+  }
+}
+@media (max-width: 412px) {
+  .client-title::before {
+    font-size: 15vw;
+    top: 27%;
+  }
+}
+@media (max-width: 360px) {
+  .client-title::before {
+    font-size: 13vw;
+    top: 35%; 
+  }
+}
+ body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    .partners-sections {
+      padding: 0px 20px;
+      text-align: center;
+    }
+    .partners-sections p {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 50px;
+      color: #444;
+    }
+    .logos-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .logos-box img {
+      max-width: 350px;
+      max-height: 150px;
+      object-fit: contain;
+      filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.15));
+      transition: transform 0.3s ease;
+    }
+    .logos-box img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .partners-section p {
+        font-size: 14px;
+      }
+    }
+
+     .client-banner {
+      position: relative;
+      background: url('images/clientban.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .client-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .client-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); 
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .client-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
 
