@@ -274,11 +274,7 @@
       color: #fff;
       border-color: #e91e63;
     }
- .banners {
-      background: url('images/backin.jpg') no-repeat center center/cover;
-      color: #fff;
-      padding: 60px 20px;
-    }
+
     .banners h1 {
       font-size: 2.5rem;
       font-weight: 600;
@@ -306,17 +302,31 @@
       justify-content: center;
       align-items: flex-end;
     }
-    .product-images img {
-      max-width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 6px;
-      padding: 8px;
-      transition: transform 0.3s ease;
-    }
-    .product-images img:hover {
-      transform: scale(1.05);
-    }
+    /* Uniform product images */
+.product-images img {
+  width: 160px;              /* fixed width */
+  height: 160px;             /* fixed height */
+  object-fit: contain;       /* keeps aspect ratio inside box */
+  border-radius: 6px;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.product-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Make all banners same height */
+.banners {
+  background: url('images/backin.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 500px;   /* adjust to desired banner height */
+  display: flex;
+  align-items: center; /* vertically centers content */
+}
+
 
     /* Keep different sizes but responsive */
     .banone { width: 190px; max-width: 40%; }
