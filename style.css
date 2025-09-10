@@ -464,6 +464,13 @@
       font-size: 20px;
       margin-bottom: 30px;
     }
+    @media(max-width:920px)
+    {
+      .about-title
+      {
+        margin-top: 1rem;
+      }
+    }
 
     .about-content h2 {
       font-weight: 700;
@@ -595,8 +602,8 @@
 @media (max-width: 992px) {
   .partners-section::before {
     font-size: 70px;
-    top: 2%;
-    left: 35%;
+    top: 5%;
+    left: 32%;
   }
 }
 
@@ -804,7 +811,7 @@
      .why-choose-section {
       position: relative;
       padding: 80px 20px;
-      background: url("images/whychoose.png") no-repeat center center/cover;
+      background: url("images/whychoose.jpeg") no-repeat center center/cover;
       color: #fff;
       overflow: hidden;
     }
