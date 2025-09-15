@@ -316,6 +316,66 @@
 .product-images img:hover {
   transform: scale(1.05);
 }
+/* make product-images a flex row and allow wrapping on small screens */
+.carousel-item .banners .product-images {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; /* change to flex-end if you want them on right */
+  flex-wrap: wrap;
+}
+
+/* default desktop sizes (bigger) */
+.carousel-item .banners .product-images img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+/* target each image with higher specificity */
+.carousel-item .banners .product-images img.banone  { width: 180px; max-width: 48%; }
+.carousel-item .banners .product-images img.bantwo  { width: 160px; max-width: 40%; }
+.carousel-item .banners .product-images img.banthree{ width: 150px; max-width: 44%; }
+.carousel-item .banners .product-images img.banfour  { width: 250px; max-width: 48%; }
+.carousel-item .banners .product-images img.banfive  { width: 170px; max-width: 40%; }
+.carousel-item .banners .product-images img.bansix{ width: 170px; max-width: 44%; }
+.carousel-item .banners .product-images img.banseven  { width: 250px; max-width: 48%; }
+.carousel-item .banners .product-images img.baneight  { width: 170px; max-width: 40%; }
+.carousel-item .banners .product-images img.bannine{ width: 170px; max-width: 44%; }
+.carousel-item .banners .product-images img.banten  { width: 210px; max-width: 48%; }
+.carousel-item .banners .product-images img.baneleven  { width: 200px; max-width: 40%; }
+.carousel-item .banners .product-images img.bantwel{ width: 190px; max-width: 44%; }
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .carousel-item .banners .product-images img.banone,
+  .carousel-item .banners .product-images img.bantwo,
+  .carousel-item .banners .product-images img.banthree {
+    width: 170px;
+    max-width: 33%;
+  }
+  .banners { padding: 45px 15px; } /* optional spacing tweak */
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .carousel-item .banners .product-images { justify-content: center; gap: .5rem; }
+  .carousel-item .banners .product-images img.banone,
+  .carousel-item .banners .product-images img.bantwo,
+  .carousel-item .banners .product-images img.banthree {
+    width: 110px;
+    max-width: 32%;
+  }
+}
+
+/* Last-resort override if another rule persists (uncomment to use) */
+/*
+.carousel-item .banners .product-images img.banone  { width: 320px !important; }
+.carousel-item .banners .product-images img.bantwo  { width: 260px !important; }
+.carousel-item .banners .product-images img.banthree{ width: 300px !important; }
+*/
+
 
 /* Make all banners same height */
 .banners {
@@ -329,24 +389,28 @@
 
 
     /* Keep different sizes but responsive */
-    .banone { width: 190px; max-width: 40%; }
-    .bantwo { width: 140px; max-width: 35%; margin-bottom: 50px; }
-    .banthree { width: 150px; max-width: 38%; }
+   /* Default desktop sizes (larger than before) */
+.banone { width: 360px; max-width: 45%; }
+.bantwo { width: 200px; max-width: 40%; margin-bottom: 50px; }
+.banthree { width: 220px; max-width: 42%; }
 
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-      .banners h1 { font-size: 2rem; }
-      .product-images { justify-content: center; }
-      .banone, .bantwo, .banthree {
-        width: 100px; max-width: 30%; margin-top: 15px;
-      }
-    }
-    @media (max-width: 576px) {
-      .banners { text-align: center; }
-      .banone, .bantwo, .banthree {
-        width: 80px; max-width: 25%; margin-top: 10px;
-      }
-    }
+/* Tablet */
+@media (max-width: 992px) {
+  .banners h1 { font-size: 2rem; }
+  .product-images { justify-content: center; }
+  .banone, .bantwo, .banthree {
+    width: 150px; max-width: 35%; margin-top: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .banners { text-align: center; }
+  .banone, .bantwo, .banthree {
+    width: 120px; max-width: 32%; margin-top: 10px;
+  }
+}
+
 
     /* Force White Circle Indicators */
 .carousel-indicators [data-bs-target] {
@@ -770,7 +834,7 @@
     .service-card {
       background: #fff;
       border-radius: 15px;
-      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
       padding: 30px 20px;
       margin-bottom: 30px;
       transition: transform 0.3s ease;
@@ -893,19 +957,24 @@
     .feature-card h6 {
       font-weight: 700;
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 10px;
     }
 
     .feature-card p {
-      font-size: 0.95rem;
+      font-size: 17px;
       margin: 0;
       color: black;
+      text-align: justify;
+      hyphens: auto;
+      line-height: 1.5;
     }
 
     /* Icon styles */
     .icon {
-      font-size: 25px;
+      font-size: 35px;
       color: #EE449E;
+      margin-top: 10px;
       
       padding: 12px;
       border-radius: 10px;
@@ -948,6 +1017,7 @@
       text-transform: uppercase;
       font-weight: 600;
       color: #ccc;
+      
     }
       .cta-section {
         position: relative;
@@ -1076,7 +1146,7 @@
       color: #777;
     }
     .testimonial-card .fa-star {
-      color: #ff4d6d;
+      color: #EE449E;
     }
     .testimonial-card p {
       margin-top: 15px;
@@ -1627,7 +1697,7 @@
 }
 
 .product-card img {
-  max-height: 200px;
+  max-height: 250px;
   transition: all 0.4s ease;
   z-index: 0;   /* image stays behind */
   position: relative;
@@ -1701,6 +1771,7 @@
       height: 100%;
       text-align: left;
       transition: all 0.3s ease;
+      margin-right: 65px;
       
     }
 
@@ -1730,10 +1801,13 @@
     }
 
     .choose-card p {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.6;
       color: #ccc;
       margin: 0;
+      text-align: justify;
+      hyphens: auto;
+      line-height: 1.8;
     }
 
 
