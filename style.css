@@ -580,16 +580,18 @@
 /* Service badge */
 .service-badge {
   background: #fff;
-  padding: 20px 20px;
+  padding: 35px 35px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 18px;
   color: #555;
   position: absolute;
   bottom: -15px;   /* overlap */
-  right: 20px;     /* adjust as needed */
+  right: 15px;     /* adjust as needed */
   z-index: 2;
+  color: #EE449E;
+  font-weight: 700;
 }
 
 .service-badge span {
@@ -1568,8 +1570,8 @@
       object-fit: cover;
     }
     .icon-circle {
-      width: 90px;
-      height: 90px;
+      width: 100px;
+      height: 100px;
       background: #fff;
       border-radius: 50%;
       display: flex;
@@ -1622,8 +1624,8 @@
     }
 
     .icons-circle {
-      width: 90px;
-      height: 90px;
+      width: 100px;
+      height: 100px;
       background: #fff;
       border-radius: 50%;
       display: flex;
@@ -1796,6 +1798,13 @@
       transition: all 0.3s ease;
       margin-right: 65px;
       
+    }
+    @media(max-width:550px)
+    {
+      .choose-card
+      {
+        margin-right: 0px;
+      }
     }
 
     .choose-card:hover {
