@@ -339,12 +339,12 @@
 .carousel-item .banners .product-images img.banfour  { width: 250px; max-width: 48%; }
 .carousel-item .banners .product-images img.banfive  { width: 170px; max-width: 40%; }
 .carousel-item .banners .product-images img.bansix{ width: 170px; max-width: 44%; }
-.carousel-item .banners .product-images img.banseven  { width: 250px; max-width: 48%; }
-.carousel-item .banners .product-images img.baneight  { width: 170px; max-width: 40%; }
-.carousel-item .banners .product-images img.bannine{ width: 170px; max-width: 44%; }
-.carousel-item .banners .product-images img.banten  { width: 210px; max-width: 48%; }
+.carousel-item .banners .product-images img.banseven  { width: 350px; max-width: 48%; }
+.carousel-item .banners .product-images img.baneight  { width: 250px; max-width: 40%; }
+
+.carousel-item .banners .product-images img.banten  { width: 550px; max-width: 48%; }
 .carousel-item .banners .product-images img.baneleven  { width: 200px; max-width: 40%; }
-.carousel-item .banners .product-images img.bantwel{ width: 190px; max-width: 44%; }
+.carousel-item .banners .product-images img.bantwel{ width: 550px; max-width: 44%; }
 
 
 /* Tablet */
@@ -1373,7 +1373,7 @@
       font-weight: 700;
       color: #EE449E;
       position: absolute;
-      top: 50%;
+      top: 43%;
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
@@ -1383,7 +1383,7 @@
       font-weight: 700;
       color: #EE449E;
       position: absolute;
-      top: 55%;
+      top: 43%;
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
@@ -2841,6 +2841,8 @@ html, body {
       align-items: center;
       justify-content: center;
       padding: 20px;
+      border: 2px solid #EE449E;
+      
     }
     .logos-box img {
       max-width: 350px;
