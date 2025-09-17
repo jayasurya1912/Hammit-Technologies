@@ -1854,7 +1854,7 @@
 
     .choose-card p {
       font-size: 15px;
-      line-height: 1.6;
+      
       color: #ccc;
       margin: 0;
       text-align: justify;
@@ -2918,4 +2918,23 @@ html, body {
         padding: 40px 15px;
       }
     }
+ 
+    .cons
+    {
+      font-size: 18px;
+    }
 
+    @media (max-width:1400px)
+    {
+      .cons
+      {
+        font-size: 16px;
+      }
+    }
+    @media (max-width:1150px)
+    {
+      .cons
+      {
+        font-size: 12px;
+      }
+    }
