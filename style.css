@@ -981,7 +981,27 @@
       font-size: 18px;
       margin-top: 10px;
     }
-
+    @media (max-width:1400px)
+    {
+      .feature-card h6
+      {
+        font-size: 16px;
+      }
+    }
+    .neme
+    {
+      font-size: 18px;
+      
+    }
+    @media (max-width:1350px)
+    {
+      .neme
+      {
+        padding-left: 60px;
+      }
+    }
+    
+    
     .feature-card p {
       font-size: 17px;
       margin: 0;
