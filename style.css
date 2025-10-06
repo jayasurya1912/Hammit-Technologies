@@ -1480,6 +1480,7 @@
       height: auto;
       display: block;
     }
+    
     .about-banner {
       position: relative;
       background: url('images/aboutbanner.jpg') no-repeat center center/cover;
