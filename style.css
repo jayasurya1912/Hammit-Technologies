@@ -333,12 +333,12 @@
 }
 
 /* target each image with higher specificity */
-.carousel-item .banners .product-images img.banone  { width: 180px; max-width: 48%; }
+.carousel-item .banners .product-images img.banone  { width: 800px; max-width: 78%; }
 .carousel-item .banners .product-images img.bantwo  { width: 160px; max-width: 40%; }
 .carousel-item .banners .product-images img.banthree{ width: 150px; max-width: 44%; }
-.carousel-item .banners .product-images img.banfour  { width: 250px; max-width: 48%; }
+.carousel-item .banners .product-images img.banfour  { width: 150px; max-width: 48%; }
 .carousel-item .banners .product-images img.banfive  { width: 170px; max-width: 40%; }
-.carousel-item .banners .product-images img.bansix{ width: 170px; max-width: 44%; }
+.carousel-item .banners .product-images img.bansix{ width: 280px; max-width: 48%; }
 .carousel-item .banners .product-images img.banseven  { width: 350px; max-width: 48%; }
 .carousel-item .banners .product-images img.baneight  { width: 250px; max-width: 40%; }
 
