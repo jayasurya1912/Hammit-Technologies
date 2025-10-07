@@ -2931,10 +2931,10 @@ html, body {
     {
       .cons
       {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
-    @media (max-width:1150px)
+    @media (max-width:1200px)
     {
       .cons
       {
